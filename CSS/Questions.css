@@ -24,11 +24,13 @@ body{
     background-color: #00821f;
     border: none;
     color: white;
-    margin-left: 1183px;
+    margin-left: 1198px;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .btn:hover{

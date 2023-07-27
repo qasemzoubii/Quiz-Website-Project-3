@@ -80,7 +80,7 @@ pass.addEventListener("keyup", function () {
   } else if (pass.value == ""){
     spanContainer[3].innerHTML ="";
   }else {
-    spanContainer[3].innerHTML = "InValid Pass";
+    spanContainer[3].innerHTML ="Your Password week";
     spanContainer[3].style.color = "red";
     console.log("InValid Password");
   }

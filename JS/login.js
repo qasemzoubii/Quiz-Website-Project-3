@@ -1,5 +1,6 @@
 const emailInput = document.getElementById("email").value;
 const submitLoginBtn = document.getElementById("submit");
+let spanContainer = document.getElementsByTagName("span");
 
 submitLoginBtn.onclick = function (event) {
   event.preventDefault();
@@ -22,9 +23,21 @@ submitLoginBtn.onclick = function (event) {
       user.push(loggedInUser.username);
       user.push(true);
       localStorage.setItem("user", JSON.stringify(user));
-      
+
       console.log("done");
       window.location.href = "/Pages/index2.html";
+    } else if (passwordInput == "" && emailInput == "") {
+      spanContainer[0].innerHTML = "Please Enter an Email";
+      spanContainer[0].style.color = "red";
+
+      spanContainer[1].innerHTML = "Please Enter an Password";
+      spanContainer[1].style.color = "red";
+    } else if (emailInput == "") {
+      spanContainer[0].innerHTML = "Please Enter an Email";
+      spanContainer[0].style.color = "red";
+    } else if (passwordInput == "") {
+      spanContainer[1].innerHTML = "Please Enter an Password";
+      spanContainer[1].style.color = "red";
     } else {
       window.alert("Invalid credentials. Please try again.");
       window.location.href = "/Pages/login.html";

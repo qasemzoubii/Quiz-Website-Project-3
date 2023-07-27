@@ -9,10 +9,11 @@ body {
 .container {
   background: white;
   display: flex;
-  height: 580px;
+  height: fit-content;
   width: 90%;
   margin: auto;
   margin-top: 5%;
+  padding-bottom: 30px;
 }
 .form {
   display: flex;
@@ -70,9 +71,11 @@ p {
   color: #00821f;
   font-weight: bold;
   font-size: 15px;
+  margin-left: 0px;
 }
 span {
   font-size: 13px;
+  margin-left: 37px;
 }
 .input-icon {
   width: 380px;

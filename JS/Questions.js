@@ -82,6 +82,7 @@ let trueAnswers= 0;
 /*---------------------------------------click on answer function---------------------------------------*/
 
 function addLiClickEventListenersE() {
+    
     listItem = document.getElementsByTagName('li');
     spanItem = document.getElementsByTagName('span');
     for (let i = 0; i < listItem.length; i++) {
@@ -124,7 +125,7 @@ function addLiClickEventListenersIQ() {
     spanItem = document.getElementsByTagName('span');
     for (let i = 0; i < listItem.length; i++) {
         listItem[i].addEventListener('click', handleLiClickIQ);
-        spanItem[i].addEventListener('click', handleLiClickIQ);
+        // spanItem[i].addEventListener('click', handleLiClickIQ);
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,7 +163,7 @@ function addLiClickEventListenersTech() {
     spanItem = document.getElementsByTagName('span');
     for (let i = 0; i < listItem.length; i++) {
         listItem[i].addEventListener('click', handleLiClickTech);
-        spanItem[i].addEventListener('click', handleLiClickTech);
+        // spanItem[i].addEventListener('click', handleLiClickTech);
     }
 }
 
@@ -333,7 +334,7 @@ function displayIQ (){
             btnIQ.style.display = 'none';
 
             const h2WelcomeIQ = document.createElement('h2');
-            h2WelcomeIQ.textContent = 'Welcome to the IQ Test';
+            h2WelcomeIQ.textContent = 'You Finished English Test! Welcome to the IQ Test';
             divQuestions.appendChild(h2WelcomeIQ);
 
             const startBtnIQ = document.createElement('button');
@@ -479,7 +480,7 @@ function displayTech (){
 
 
             const h2WelcomeTech = document.createElement('h2');
-            h2WelcomeTech.textContent = 'Welcome to the Technical Test';
+            h2WelcomeTech.textContent = 'You Finished IQ Test! Welcome to the Technical Test';
             divQuestions.appendChild(h2WelcomeTech);
 
             const startBtnTech = document.createElement('button');
@@ -590,10 +591,6 @@ function displayTech (){
                         <button id="btnCancel"><a id="btnCancel" href='./index.html'>Cancel</a></button>
                     </div>
                 </div>`;
-                // let Cancel= document.getElementById(btnCancel);
-                // Cancel.addEventListener('click', function(){
-                //     displayQuestionTech(8)
-                // });
 
                 const customModal = document.getElementById('customModal');
 
